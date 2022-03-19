@@ -21,7 +21,7 @@ int main(){
 		b=c;
 	}
 	
-	printf("Answer= %d",hcf(a,b,b));
+	printf("Answer: %d",hcf(a,b,b));
 	
 	return 0;
 }
