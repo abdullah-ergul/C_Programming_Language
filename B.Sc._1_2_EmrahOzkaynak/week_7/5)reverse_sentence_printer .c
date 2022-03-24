@@ -11,15 +11,16 @@ int main(){
 	
 	for(i=strlen(a)-1; i>=0; i--){
 		if(*(a+i) == ' '){
-			for(k=j-1;k>=0;k--){
+			for(k=j-1;k>=0;k--)
 				printf("%c",*(b+k));
-			}
 			printf("\n");
 			j=0;
 		}
 		*(b+j)= *(a+i);
 		j++;
 	}
+	for(k=j-1;k>=0;k--)
+		printf("%c",*(b+k));
 	
 	return 0;
 }
