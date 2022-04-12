@@ -8,12 +8,12 @@ int main(){
 	char *b= (char*)calloc(10, sizeof(char));
 	
 	gets(a);
+	printf("\n");
 	
 	for(i=strlen(a)-1; i>=0; i--){
 		if(*(a+i) == ' '){
 			for(k=j-1;k>=0;k--)
 				printf("%c",*(b+k));
-			printf("\n");
 			j=0;
 		}
 		*(b+j)= *(a+i);

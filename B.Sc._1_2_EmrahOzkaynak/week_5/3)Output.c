@@ -1,10 +1,15 @@
 #include <stdio.h>
 
+int fun(int **p){
+	int b= 8;
+	*p= &b;
+	printf("%d ", **p);
+}
+
 int main(){
-	int *ptr, a=10;
-	ptr= &a;
-	*ptr += 1;
-	printf("%d %d",*ptr,a);
+	int a=10, *p=&a;
+	fun(&p);
+	printf("%d", *p);
 	
 	return 0;
 }

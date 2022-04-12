@@ -1,1 +1,3 @@
-3 8 8
+printVal fonksiyonunun içerisindeki *p pointeri i değerinin tutulduğu adresten bir sonraki adresi tutmaktadır.
+Bu yüzden çıktımız daha önceden ram üzerinde kayılı bir veri çıkacaktır.
+Bendeki Sonuç= 6487576

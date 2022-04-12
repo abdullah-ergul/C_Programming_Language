@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+
 int main(){
 	int sayi,top,i=1;
 	
@@ -16,5 +18,6 @@ int main(){
 	}else{
 		printf("%d Mukemmel Sayi Degildir.",sayi);
 	}
+	
 	return 0;
 }
