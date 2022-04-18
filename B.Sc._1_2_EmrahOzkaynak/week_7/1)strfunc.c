@@ -20,5 +20,7 @@ int main(){
 	
 	puts(str);
 	
+	free(tempstr); free(str);
+	
 	return 0;
 }
