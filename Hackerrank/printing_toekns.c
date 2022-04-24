@@ -3,14 +3,12 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main() {
+int main(){
 
     char *s, *c;
     s = malloc(1024 * sizeof(char));
     scanf("[^\n]", s);
     s = realloc(s, strlen(s) + 1);
-    
-    
     
     return 0;
 }
