@@ -171,15 +171,17 @@ void updateRecords(void){
     if((fptr= fopen("customer.dat","r+")) == NULL)
         printf("Can't Find File!\n");
     else{
-        while(!feof(fptr)){
             fread(&info, sizeof(customer), 1, fptr);
+        while(!feof(fptr)){
             if(info.deposit > 300.0){
+                //printf("%d %s %s %lf\n", info.accnum, info.name, info.sname, info.deposit);  // Deneme Satýrý //
                 info.deposit += 50.0;
                 fseek(fptr, i*sizeof(customer), SEEK_SET);
-                fwrite(&info, sizeof(customer), 1, fptr);
+                fwrite(&info, sizeof(customer), 1, fptr);  //Hatamýzýn sebebi fwrite() kullanýldýktan sonra pointeri doðru yerde býrakmamasý.
+                fseek(fptr, (i+1)*sizeof(customer), SEEK_SET);  //Hatamýzý çözmek için pointeri baþtan itibaren bir konuma atýyoruz.
             }
-            Sleep(10);
             i++;
+            fread(&info, sizeof(customer), 1, fptr);
         }
         printf("Process is Successful!\n");
         fclose(fptr);
