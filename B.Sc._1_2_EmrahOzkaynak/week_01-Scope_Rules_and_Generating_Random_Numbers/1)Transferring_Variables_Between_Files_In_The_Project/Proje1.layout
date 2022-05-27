@@ -5,7 +5,7 @@ TopLine=1
 LeftChar=1
 [Editors]
 Order=0,1
-Focused=1
+Focused=0
 [Editor_1]
 CursorCol=45
 CursorRow=4
