@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <Windows.h>
 
 struct customer{
 int accnum; char name[20]; char sname[25]; double deposit;
@@ -148,7 +147,7 @@ void transferRecords(void){
 
     if((fptr= fopen("customer.dat","r")) == NULL)
         printf("Can't Find File!\n");
-    else if((fptr2= fopen("list.txt","w")) == NULL)
+    else if((fptr2= fopen("customer_300.txt","w")) == NULL)
         printf("Can't Create File!\n");
     else{
         while(!feof(fptr)){
