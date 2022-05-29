@@ -173,11 +173,11 @@ void updateRecords(void){
             fread(&info, sizeof(customer), 1, fptr);
         while(!feof(fptr)){
             if(info.deposit > 300.0){
-                //printf("%d %s %s %lf\n", info.accnum, info.name, info.sname, info.deposit);  // Deneme Satýrý //
+                //printf("%d %s %s %lf\n", info.accnum, info.name, info.sname, info.deposit);  // Deneme Satï¿½rï¿½ //
                 info.deposit += 50.0;
                 fseek(fptr, i*sizeof(customer), SEEK_SET);
-                fwrite(&info, sizeof(customer), 1, fptr);  //Hatamýzýn sebebi fwrite() kullanýldýktan sonra pointeri doðru yerde býrakmamasý.
-                fseek(fptr, (i+1)*sizeof(customer), SEEK_SET);  //Hatamýzý çözmek için pointeri baþtan itibaren bir konuma atýyoruz.
+                fwrite(&info, sizeof(customer), 1, fptr);  //Hatamï¿½zï¿½n sebebi fwrite() kullanï¿½ldï¿½ktan sonra pointeri doï¿½ru yerde bï¿½rakmamasï¿½.
+                fseek(fptr, (i+1)*sizeof(customer), SEEK_SET);  //Hatamï¿½zï¿½ ï¿½ï¿½zmek iï¿½in pointeri baï¿½tan itibaren bir konuma atï¿½yoruz.
             }
             i++;
             fread(&info, sizeof(customer), 1, fptr);
