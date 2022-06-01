@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 struct customer{
-int accnum; char name[20]; char sname[25]; double deposit;
+    int accnum; char name[20]; char sname[25]; double deposit;
 }; typedef struct customer customer;
 
 int chooseFunc(void);
