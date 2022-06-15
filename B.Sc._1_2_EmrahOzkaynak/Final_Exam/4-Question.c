@@ -1,3 +1,5 @@
+// 25 Point
+
 #include <stdio.h>
 
 void func(int a, int b, int c){
