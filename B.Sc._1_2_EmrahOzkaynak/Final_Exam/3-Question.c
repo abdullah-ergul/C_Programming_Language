@@ -4,7 +4,7 @@
 
 int main(){
 
-    FILE *file= fopen("Data.txt","w");
+    FILE *file= fopen("3-Question.txt","w");
     fprintf(file,"!!!BUNU YAZAN MALDIR!!!");
     fclose(file);
 

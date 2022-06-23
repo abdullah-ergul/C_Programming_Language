@@ -176,8 +176,8 @@ void updateRecords(void){
                 //printf("%d %s %s %lf\n", info.accnum, info.name, info.sname, info.deposit);  // Deneme Sat�r� //
                 info.deposit += 50.0;
                 fseek(fptr, i*sizeof(customer), SEEK_SET);
-                fwrite(&info, sizeof(customer), 1, fptr);  //Hatam�z�n sebebi fwrite() kullan�ld�ktan sonra pointeri do�ru yerde b�rakmamas�.
-                fseek(fptr, (i+1)*sizeof(customer), SEEK_SET);  //Hatam�z� ��zmek i�in pointeri ba�tan itibaren bir konuma at�yoruz.
+                fwrite(&info, sizeof(customer), 1, fptr);  //Hatamızın sebebi fwrite() kullanild�iktan sonra pointeri do�ru yerde b�rakmamas�.
+                fseek(fptr, (i+1)*sizeof(customer), SEEK_SET);  //Hatamizi izmek icin pointeri başstan itibaren bir konuma at�yoruz.
             }
             i++;
             fread(&info, sizeof(customer), 1, fptr);

@@ -12,8 +12,8 @@ void func(int a, int b, int c){
     printf("%d. Output: %d %d %d\n", ++i, a ,b ,c);
 }
 
- int main(){
+int main(){
     func(15, 12, 8);
 
     return 0;
- }
+}
