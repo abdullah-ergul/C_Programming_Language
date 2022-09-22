@@ -6,7 +6,7 @@ void addrec(void);
 void lsfile(void);
 void lssuccess(void);
 void mkfile_suc_and_fail(void);
-//void filesize(void);
+// void filesize(void);
 
 
 int main(){
@@ -110,4 +110,4 @@ void mkfile_suc_and_fail(void){
     printf("--------------------------------\n\n");
 }
 
-//void filesize(void){}
+// void filesize(void){}
