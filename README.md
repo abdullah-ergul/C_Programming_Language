@@ -1,0 +1,2 @@
+# C Programming Language
+A github repository for people who are interested and enthusiastic about programming. I used the C programming language, which I think is the most suitable for students studying computer science. The reason for this is that the foundation of modern programming languages of the time is based on C.
